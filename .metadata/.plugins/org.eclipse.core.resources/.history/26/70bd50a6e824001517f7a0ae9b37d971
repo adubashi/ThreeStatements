@@ -12,17 +12,8 @@ public class IncomeStatement {
 	public int operatingIncome;
 	public int interestIncome;
 	public int interestExpense;
-	public int saleOfPPE;
-	public int saleOfST;
-	public int goodwillImpairment;
-	public int PPEwritedown;
-	
-	public int preTaxIncome;
-	
-	public int IncomeTaxProvision;
-	public int currentPortionOfIncomeTaxes;
-	public int defferedPortionOfIncomeTaxes;
-	public int netIncome;
+	public int saleOfPP&E;
+	public int interestIncome;
 	
 
 }

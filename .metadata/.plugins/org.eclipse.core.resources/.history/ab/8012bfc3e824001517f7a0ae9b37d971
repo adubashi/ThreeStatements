@@ -19,10 +19,5 @@ public class IncomeStatement {
 	
 	public int preTaxIncome;
 	
-	public int IncomeTaxProvision;
-	public int currentPortionOfIncomeTaxes;
-	public int defferedPortionOfIncomeTaxes;
-	public int netIncome;
-	
 
 }
