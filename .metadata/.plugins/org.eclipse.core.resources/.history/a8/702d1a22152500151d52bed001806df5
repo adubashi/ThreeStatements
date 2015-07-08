@@ -1,0 +1,52 @@
+
+public class IncomeStatement {
+	public int revenue;
+	public int cogs;
+	public int grossProfit;
+	public int operatingExpenses;
+	
+	public int depreciation;
+	public int stockBasedCompensation;
+	public int amortizationOfIntangibles;
+	
+	public int operatingIncome;
+	public int interestIncome;
+	public int interestExpense;
+	public int saleOfPPE;
+	public int saleOfST;
+	public int goodwillImpairment;
+	public int PPEwritedown;
+	
+	public int preTaxIncome;
+	
+	public int IncomeTaxProvision;
+	public int currentPortionOfIncomeTaxes;
+	public int defferedPortionOfIncomeTaxes;
+	public int netIncome;
+	
+	public void calculateGrossProfit(){
+		this.grossProfit = this.revenue - this.cogs;
+	}
+	
+	public void calculateOperatingIncome(){
+		this.operatingIncome = this.grossProfit - this.operatingExpenses - 
+		this.depreciation - this.stockBasedCompensation - this.amortizationOfIntangibles;
+	}
+	
+	public void calculatePreTaxIncome(){
+		this.preTaxIncome = this.interestIncome + this.interestExpense + this.saleOfPPE 
+		+ this.saleOfST + this.goodwillImpairment + this.PPEwritedown;
+	}
+	
+	public void calculateIncomeTaxProvision(){
+		this.IncomeTaxProvision = (int)(this.preTaxIncome * .4);
+	}
+	
+	public void calculateCurrentPortionOfIncomeTaxes(){
+		
+	}
+	
+	
+	
+
+}

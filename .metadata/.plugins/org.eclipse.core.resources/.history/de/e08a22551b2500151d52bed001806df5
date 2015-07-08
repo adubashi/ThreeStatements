@@ -1,0 +1,99 @@
+
+public class IncomeStatement {
+	public static final double TAXRATE = .4;
+	public int revenue;
+	public int cogs;
+	
+	//No input needed
+	public int grossProfit;
+	public int operatingExpenses;
+	
+	public int depreciation;
+	public int stockBasedCompensation;
+	public int amortizationOfIntangibles;
+	
+	//No input needed
+	public int operatingIncome;
+	
+	public int interestIncome;
+	public int interestExpense;
+	public int saleOfPPE;
+	public int saleOfST;
+	public int goodwillImpairment;
+	public int PPEwritedown;
+	
+	//No input needed
+	public int preTaxIncome;
+	
+	//No input needed
+	public int IncomeTaxProvision;
+	
+	//No input needed
+	public int currentPortionOfIncomeTaxes;
+	
+	public int deferredPortionOfIncomeTaxes;
+	
+	//No input needed
+	public int netIncome;
+	
+	public IncomeStatement(int revenue, int cogs, int operatingExpenses, int depreciation,
+						   int stockBasedCompensation, int amortizationOfIntangibles, 
+						   int interestIncome, int interestExpense, int saleOfPPE, 
+						   int saleOfST, int goodwillImpairment, int PPEwritedown,
+						   int deferredPortionOfIncomeTaxes){
+		this.revenue = revenue;
+		this.cogs = cogs;
+		this.operatingExpenses = operatingExpenses;
+		this.depreciation = depreciation;
+		this.stockBasedCompensation = stockBasedCompensation;
+		this.amortizationOfIntangibles= amortizationOfIntangibles;
+		this.interestIncome= interestIncome;
+		this.interestExpense = interestExpense;
+		this.saleOfPPE = saleOfPPE;
+		this.saleOfST = saleOfST;
+		this.goodwillImpairment = goodwillImpairment;
+		this.PPEwritedown = PPEwritedown;
+		this.deferredPortionOfIncomeTaxes = deferredPortionOfIncomeTaxes;
+		calculateGrossProfit();
+		calculateOperatingIncome();
+		calculatePreTaxIncome();
+		calculateIncomeTaxProvision();
+		calculateCurrentPortionOfIncomeTaxes();
+		calculateNetIncome();
+	}
+	
+	public IncomeStatement(int revenue, int cogs, int operatingExpenses){
+		IncomeStatement(revenue,cogs,operatingExpenses,0,0,0,0,0,0);
+		
+	}
+	
+	public void calculateGrossProfit(){
+		this.grossProfit = this.revenue - this.cogs;
+	}
+	
+	public void calculateOperatingIncome(){
+		this.operatingIncome = this.grossProfit - this.operatingExpenses - 
+		this.depreciation - this.stockBasedCompensation - this.amortizationOfIntangibles;
+	}
+	
+	public void calculatePreTaxIncome(){
+		this.preTaxIncome = this.interestIncome + this.interestExpense + this.saleOfPPE 
+		+ this.saleOfST + this.goodwillImpairment + this.PPEwritedown;
+	}
+	
+	public void calculateIncomeTaxProvision(){
+		this.IncomeTaxProvision = (int)(this.preTaxIncome * TAXRATE);
+	}
+	
+	public void calculateCurrentPortionOfIncomeTaxes(){
+		this.currentPortionOfIncomeTaxes = this.IncomeTaxProvision - this.deferredPortionOfIncomeTaxes;
+	}
+	
+	public void calculateNetIncome(){
+		this.netIncome = this.preTaxIncome - this.IncomeTaxProvision;
+	}
+	
+	
+	
+
+}
