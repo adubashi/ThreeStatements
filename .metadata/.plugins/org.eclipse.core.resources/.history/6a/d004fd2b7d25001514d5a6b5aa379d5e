@@ -1,0 +1,6 @@
+
+public class BalanceSheet {
+	private int cash;
+	private int shortTermInvestments;
+	private int accountsReceivable;
+}

@@ -1,0 +1,15 @@
+
+public class BalanceSheet {
+	private int cash;
+	private int shortTermInvestments;
+	private int accountsReceivable;
+	private int prepaidExpenses;
+	private int inventory;
+	private int totalCurrentAssets;
+	
+	private int PPE;
+	private int intangibleAssets;
+	private int longTermInvestments;
+	private int goodwill;
+	private int totalLongTermAssets;
+}

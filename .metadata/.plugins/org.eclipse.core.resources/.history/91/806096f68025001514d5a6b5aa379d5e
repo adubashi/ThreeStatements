@@ -1,0 +1,60 @@
+
+public class BalanceSheet {
+	private int cash;
+	private int shortTermInvestments;
+	private int accountsReceivable;
+	private int prepaidExpenses;
+	private int inventory;
+	
+	//Calculate
+	private int totalCurrentAssets;
+	
+	private int PPE;
+	private int intangibleAssets;
+	private int longTermInvestments;
+	private int goodwill;
+	
+	//Calculate
+	private int totalLongTermAssets;
+	
+	//Calculate
+	private int totalAssets;
+	
+	private int revolver;
+	private int accountsPayable;
+	private int accruedExpenses;
+	
+	//Calculate
+	private int totalCurrentLiabilities;
+	
+	private int deferredRevenue;
+	private int deferredTaxLiability;
+	private int longTermDebt;
+	
+	//Calculate
+	private int totalLongTermLiabilities;
+	
+	
+	//Calculate
+	private int totalLiabilities;
+	
+	private int commonStock;
+	private int treasuryStock;
+	private int retainedEarnings;
+	private int otherIncome;
+	
+	//Calculate
+	private int shareholdersEquity;
+	
+	//Calculate
+	private int totalLiabilitiesAndEquity;
+	
+	//Calculate
+	private boolean balanced;
+	
+	
+	//Calculating////////////////////////////////////////
+	
+	
+	
+}

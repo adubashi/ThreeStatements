@@ -1,0 +1,88 @@
+
+public class BalanceSheet {
+	private int cash;
+	private int shortTermInvestments;
+	private int accountsReceivable;
+	private int prepaidExpenses;
+	private int inventory;
+	
+	//Calculate
+	private int totalCurrentAssets;
+	
+	private int PPE;
+	private int intangibleAssets;
+	private int longTermInvestments;
+	private int goodwill;
+	
+	//Calculate
+	private int totalLongTermAssets;
+	
+	//Calculate
+	private int totalAssets;
+	
+	private int revolver;
+	private int accountsPayable;
+	private int accruedExpenses;
+	
+	//Calculate
+	private int totalCurrentLiabilities;
+	
+	private int deferredRevenue;
+	private int deferredTaxLiability;
+	private int longTermDebt;
+	
+	//Calculate
+	private int totalLongTermLiabilities;
+	
+	
+	//Calculate
+	private int totalLiabilities;
+	
+	private int commonStock;
+	private int treasuryStock;
+	private int retainedEarnings;
+	private int otherIncome;
+	
+	//Calculate
+	private int shareholdersEquity;
+	
+	//Calculate
+	private int totalLiabilitiesAndEquity;
+	
+	//Calculate
+	private boolean balanced;
+	
+	
+	//Calculating////////////////////////////////////////
+	public void calculateTotalCurrentAssets(){
+		this.totalCurrentAssets = cash + shortTermInvestments +
+		accountsReceivable +
+		prepaidExpenses +
+		inventory;
+	}
+	
+	public void calculateTotalLongTermAssets(){
+		this.totalLongTermAssets = PPE + intangibleAssets + longTermInvestments + goodwill;
+	}
+	
+	public void calculateTotalAssets(){
+		this.totalAssets = this.totalCurrentAssets + this.totalLongTermAssets;
+	}
+	
+	public void calculateTotalCurrentLiabilities(){
+		this.totalCurrentLiabilities = revolver + accountsPayable + accruedExpenses;
+	}
+	
+	public void calculateTotalLongTermLiabilities(){
+		
+		this.totalLongTermLiabilities = deferredRevenue + deferredTaxLiability + longTermDebt;
+	}
+	
+	public void calculateTotalLiabilities(){
+		this.totalLiabilities = totalCurrentLiabilties + totalLongTermLiabilities;
+	}
+	
+	
+	
+	
+}

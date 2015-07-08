@@ -182,6 +182,7 @@ public class IncomeStatement {
 	public void calculateOperatingIncome(){
 		this.operatingIncome = this.grossProfit - this.operatingExpenses - 
 		this.depreciation - this.stockBasedCompensation - this.amortizationOfIntangibles;
+		System.out.println(this.operatingIncome);
 	}
 	
 	public void calculatePreTaxIncome(){
