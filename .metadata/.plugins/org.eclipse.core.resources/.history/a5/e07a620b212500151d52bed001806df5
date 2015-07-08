@@ -1,0 +1,42 @@
+
+public class Company {
+	/*
+	 * Revenue Increases By:
+Operating Expenses Increases By:
+
+Depreciation Increases By:
+Stock-Based Compensation Increases By:
+Amortization of Intangibles Increases By:
+
+Interest Income Increases By:
+Interest Expense Increases By:
+Gain / (Loss) on Sale of PP&E Changes By:
+Gain / (Loss) on Sale of ST Investments Changes By:
+Goodwill Impairment Increases By:
+PP&E Write-Down Increases By:
+
+Deferred Income Taxes Increases By:
+
+	 */
+	
+	public IncomeStatement currentCompanyIS;
+	public IncomeStatement endCompanyIS;
+	
+	public Company(int revenue, int cogs, int operatingExpenses){
+		currentCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
+		endCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
+		this.update();		
+	}
+	
+	public void update(){
+		currentCompanyIS.update();
+		endCompanyIS.update();	
+	}
+	
+	//Changes in the income statement
+	
+	public void changeRevenu(int change){
+		endCompanyIS.setRevenue(endCompanyIS.getRevenue() + change);
+	}
+
+}

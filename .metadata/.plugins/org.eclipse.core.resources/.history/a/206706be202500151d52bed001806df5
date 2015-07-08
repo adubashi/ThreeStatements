@@ -1,0 +1,18 @@
+
+public class Company {
+	
+	public IncomeStatement currentCompanyIS;
+	public IncomeStatement endCompanyIS;
+	
+	public Company(int revenue, int cogs, int operatingExpenses){
+		currentCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
+		endCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
+		this.update();		
+	}
+	
+	public void update(){
+		currentCompanyIS.update();
+		endCompanyIS.update();	
+	}
+
+}

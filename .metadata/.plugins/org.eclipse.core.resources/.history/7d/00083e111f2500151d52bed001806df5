@@ -1,0 +1,7 @@
+
+public class Company {
+	
+	public IncomeStatement currentCompanyIS;
+	public IncomeStatement endCompanyIS;
+
+}
