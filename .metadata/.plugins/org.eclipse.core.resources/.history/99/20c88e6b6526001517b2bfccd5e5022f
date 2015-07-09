@@ -9,8 +9,7 @@ public class testCompany {
 		System.out.println(testCompany);
 		*/
 		
-		IncomeStatement test = new IncomeStatement(1300, 100 ,200);
-		test.printTable();
+		
 	}
 
 }

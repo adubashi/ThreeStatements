@@ -10,7 +10,6 @@ public class testCompany {
 		*/
 		
 		IncomeStatement test = new IncomeStatement(1300, 100 ,200);
-		test.printTable();
 	}
 
 }

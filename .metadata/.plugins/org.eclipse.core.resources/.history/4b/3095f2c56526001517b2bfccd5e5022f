@@ -182,6 +182,7 @@ public class IncomeStatement {
 	public void calculateOperatingIncome(){
 		this.operatingIncome = this.grossProfit - this.operatingExpenses - 
 		this.depreciation - this.stockBasedCompensation - this.amortizationOfIntangibles;
+		System.out.println(this.operatingIncome);
 	}
 	
 	public void calculatePreTaxIncome(){
@@ -223,44 +224,27 @@ public class IncomeStatement {
 	}
 	
 	public void printTable(){
-		update();
-		System.out.format("%32s%10d", "Revenue", this.revenue);
-		System.out.println();
+		System.out.format("%5s%5d", "Revenue", this.revenue);
 		System.out.format("%32s%10d", "Cogs", this.cogs);
-		System.out.println();
 		System.out.format("%32s%10d", "Gross Profit", this.grossProfit);
-		System.out.println();
+		/*
 		System.out.format("%32s%10d", "Operating Expenses", this.operatingExpenses);
-		System.out.println();
 		System.out.format("%32s%10d", "Depreciation", this.depreciation);
-		System.out.println();
 		System.out.format("%32s%10d", "Stock Based Compensation", this.stockBasedCompensation);
-		System.out.println();
 		System.out.format("%32s%10d", "Amortization of Intangibles", this.amortizationOfIntangibles);
-		System.out.println();
 		System.out.format("%32s%10d", "Operating Income", this.operatingIncome);
-		System.out.println();
 		System.out.format("%32s%10d", "Interest Income", this.interestIncome);
-		System.out.println();
 		System.out.format("%32s%10d", "Interest Expense", this.interestExpense);
-		System.out.println();
 		System.out.format("%32s%10d", "Gain/Loss on Sale of PP&E", this.saleOfPPE);
-		System.out.println();
 		System.out.format("%32s%10d", "Gain/Loss on Sale of ST", this.saleOfST);
-		System.out.println();
 		System.out.format("%32s%10d", "Goodwill Impairment", this.goodwillImpairment);
-		System.out.println();
 		System.out.format("%32s%10d", "PP&E writedown", this.PPEwritedown);
-		System.out.println();
 		System.out.format("%32s%10d", "PreTax Income", this.preTaxIncome);
-		System.out.println();
 		System.out.format("%32s%10d", "Income Tax Provision", this.IncomeTaxProvision);
-		System.out.println();
 		System.out.format("%32s%10d", "Current Portion of Income Taxes:", this.currentPortionOfIncomeTaxes);
-		System.out.println();
 		System.out.format("%32s%10d", "Deferred Portion of Income Taxes", this.deferredPortionOfIncomeTaxes);
-		System.out.println();
-		System.out.format("%32s%10d", "Net Income", this.netIncome);	
+		System.out.format("%32s%10d", "Net Income", this.netIncome);
+		*/		
 	}
 	
 	

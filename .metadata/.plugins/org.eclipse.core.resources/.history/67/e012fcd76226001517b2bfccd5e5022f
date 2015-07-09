@@ -80,11 +80,7 @@ public class CashFlowStatement {
 	}
 	
 	public void update(){
-		calculateCFfromOperations();
-		calculateCFfromInvesting();
-		calculateCFfromFinancing();
-		calculateIncreaseInCash();
-		calculateCash();
+		
 	}
 	
 	

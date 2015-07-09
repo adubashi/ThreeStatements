@@ -182,6 +182,7 @@ public class IncomeStatement {
 	public void calculateOperatingIncome(){
 		this.operatingIncome = this.grossProfit - this.operatingExpenses - 
 		this.depreciation - this.stockBasedCompensation - this.amortizationOfIntangibles;
+		System.out.println(this.operatingIncome);
 	}
 	
 	public void calculatePreTaxIncome(){
@@ -224,11 +225,11 @@ public class IncomeStatement {
 	
 	public void printTable(){
 		update();
-		System.out.format("%32s%10d", "Revenue", this.revenue);
+		System.out.format("%5s%5d", "Revenue", this.revenue);
 		System.out.println();
-		System.out.format("%32s%10d", "Cogs", this.cogs);
+		System.out.format("%5s%5d", "Cogs", this.cogs);
 		System.out.println();
-		System.out.format("%32s%10d", "Gross Profit", this.grossProfit);
+		System.out.format("%5s%5d", "Gross Profit", this.grossProfit);
 		System.out.println();
 		System.out.format("%32s%10d", "Operating Expenses", this.operatingExpenses);
 		System.out.println();

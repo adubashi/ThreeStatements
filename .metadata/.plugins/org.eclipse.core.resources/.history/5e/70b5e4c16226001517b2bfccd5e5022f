@@ -79,14 +79,6 @@ public class CashFlowStatement {
 		this.endCash = this.beginningCash + this.increaseInCash;
 	}
 	
-	public void update(){
-		calculateCFfromOperations();
-		calculateCFfromInvesting();
-		calculateCFfromFinancing();
-		calculateIncreaseInCash();
-		calculateCash();
-	}
-	
 	
 
 }
