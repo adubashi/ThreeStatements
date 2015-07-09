@@ -76,7 +76,7 @@ public class CashFlowStatement {
 	}
 	
 	public void calculateCash(){
-		this.endCash = this.beginningCash + this.increaseInCash;
+		this.endCash = 100 + this.increaseInCash;
 	}
 	
 	

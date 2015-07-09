@@ -47,12 +47,6 @@ public class CashFlowStatement {
 	private int increaseInCash;
 	private int endCash;
 	
-	public CashFlowStatement(int beginningCash, int netIncome){
-		this.beginningCash = beginningCash;
-		this.netIncome = netIncome;
-		
-	}
-	
 	public void calculateCFfromOperations(){
 		this.CFfromOperations = this.depreciation + this.stockBasedCompensation + this.amortizationOfIntangibles +
 				                this.deferredIncomeTaxes + this.gainOnSaleOfPPE + this.gainOnSaleOfST +
@@ -62,7 +56,7 @@ public class CashFlowStatement {
 	}
 	
 	public void calculateCFfromInvesting(){
-		this.CFfromInvesting = this.purchaseShortTermInvestments + this.sellShortTermInvestments + this.purchaseLongTermInvestments +
+		this.CFfromInvesting = this.purchaseShortTermInvestments + this.sellLongTermInvestments + this.purchaseLongTermInvestments +
 				               this.sellLongTermInvestments + this.capitalExpenditures + this.PPEsaleProceeds;
 	}
 	
@@ -76,7 +70,7 @@ public class CashFlowStatement {
 	}
 	
 	public void calculateCash(){
-		this.endCash = this.beginningCash + this.increaseInCash;
+		this.endCash = 100 + this.increaseInCash;
 	}
 	
 	

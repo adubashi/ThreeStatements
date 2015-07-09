@@ -1,0 +1,28 @@
+
+public class CashFlowStatement {
+	private int netIncome;
+	
+	//Non cash expenses
+	private int stockBasedCompensation;
+	private int amortizationOfIntangibles;
+	private int deferredIncomeTaxes;
+	private int gainOnSaleOfPPE;
+	private int gainOnSaleOfST;
+	private int PPEwritedown;
+	
+	//Changes in operating assets and liabilities 
+	private int changesInaccountsReceivable;
+	private int changesInprepaidExpenses;
+	private int changesIninventory;
+	private int changesInaccountsPayable;
+	private int changesInaccruedExpenses;
+	private int changesIndeferredRevenue;
+	
+	//Cash flow from operations 
+	private int CFfromOperations;
+	
+	//Cash flow from Investing
+	private int purchaseShortTermInvestments;
+	private int sellShortTermInvestments;
+
+}

@@ -47,36 +47,22 @@ public class CashFlowStatement {
 	private int increaseInCash;
 	private int endCash;
 	
-	public CashFlowStatement(int beginningCash, int netIncome){
-		this.beginningCash = beginningCash;
-		this.netIncome = netIncome;
-		
-	}
-	
 	public void calculateCFfromOperations(){
 		this.CFfromOperations = this.depreciation + this.stockBasedCompensation + this.amortizationOfIntangibles +
 				                this.deferredIncomeTaxes + this.gainOnSaleOfPPE + this.gainOnSaleOfST +
 				                this.PPEwritedown + this.changesInaccountsReceivable + this.changesInprepaidExpenses 
 				                + this.changesIninventory + this.changesInaccountsPayable + this.changesInaccruedExpenses +
-				                this.changesIndeferredRevenue + this.netIncome;
+				                this.changesIndeferredRevenue;
 	}
 	
 	public void calculateCFfromInvesting(){
-		this.CFfromInvesting = this.purchaseShortTermInvestments + this.sellShortTermInvestments + this.purchaseLongTermInvestments +
+		this.CFfromInvesting = this.purchaseShortTermInvestments + this.sellLongTermInvestments + this.purchaseLongTermInvestments +
 				               this.sellLongTermInvestments + this.capitalExpenditures + this.PPEsaleProceeds;
 	}
 	
 	public void calculateCFfromFinancing(){
-		this.CFfromFinancing = -this.dividendsIssued + this.issueLongTermDebt - this.repayLongTermDebt
-				+ this.issueShortTermDebt - this.repayShortTermDebt - this.repurchaseShares + this.issueNewShares;	
-	}
-	
-	public void calculateIncreaseInCash(){
-		this.increaseInCash = this.CFfromFinancing + this.CFfromInvesting + this.CFfromOperations;
-	}
-	
-	public void calculateCash(){
-		this.endCash = this.beginningCash + this.increaseInCash;
+		this.CFfromFinancing = -this.dividendsIssued;
+		
 	}
 	
 	

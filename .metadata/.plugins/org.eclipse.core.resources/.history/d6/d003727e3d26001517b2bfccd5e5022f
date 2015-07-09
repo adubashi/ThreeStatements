@@ -1,0 +1,16 @@
+
+public class CashFlowStatement {
+	private int netIncome;
+	
+	private int stockBasedCompensation;
+	private int amortizationOfIntangibles;
+	private int deferredIncomeTaxes;
+	private int gainOnSaleOfPPE;
+	private int gainOnSaleOfST;
+	private int PPEwritedown;
+	
+	private int accountsReceivable;
+	private int prepaidExpenses;
+	
+
+}

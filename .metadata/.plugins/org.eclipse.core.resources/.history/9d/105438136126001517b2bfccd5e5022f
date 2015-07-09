@@ -47,9 +47,7 @@ public class CashFlowStatement {
 	private int increaseInCash;
 	private int endCash;
 	
-	public CashFlowStatement(int beginningCash, int netIncome){
-		this.beginningCash = beginningCash;
-		this.netIncome = netIncome;
+	public CashFlowStatement(int beginningCash, int cash){
 		
 	}
 	
@@ -76,7 +74,7 @@ public class CashFlowStatement {
 	}
 	
 	public void calculateCash(){
-		this.endCash = this.beginningCash + this.increaseInCash;
+		this.endCash = 100 + this.increaseInCash;
 	}
 	
 	

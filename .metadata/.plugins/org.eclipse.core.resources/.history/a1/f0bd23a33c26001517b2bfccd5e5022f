@@ -1,0 +1,6 @@
+
+public class CashFlowStatement {
+	private int netIncome;
+	
+
+}
