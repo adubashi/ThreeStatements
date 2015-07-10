@@ -2,10 +2,14 @@
 public class Company {
 	
 	
-	public IncomeStatement currentCompanyIS;	
+	public IncomeStatement currentCompanyIS;
+	public IncomeStatement endCompanyIS;
+	
 	public BalanceSheet  currentCompanyBS;
+	public BalanceSheet endCompanyBS;
+	
 	public CashFlowStatement currentCompanyCF;
-
+	public CashFlowStatement endCompanyCF;
 	
 	public Company(int cash, double taxRate){
 		currentCompanyIS = new IncomeStatement(0,0,0);
