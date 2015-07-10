@@ -1,9 +1,0 @@
-
-public class IncomeStatement {
-	public int revenue;
-	public int cogs;
-	public int grossProfit;
-	public int operatingExpenses;
-	
-
-}

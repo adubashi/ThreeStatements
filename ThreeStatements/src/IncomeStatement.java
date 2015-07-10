@@ -224,6 +224,8 @@ public class IncomeStatement {
 	
 	public void printTable(){
 		update();
+		System.out.format("%32s", "INCOME STATEMENT");
+		System.out.println();
 		System.out.format("%32s%10d", "Revenue", this.revenue);
 		System.out.println();
 		System.out.format("%32s%10d", "Cogs", this.cogs);
@@ -261,6 +263,7 @@ public class IncomeStatement {
 		System.out.format("%32s%10d", "Deferred Portion of Income Taxes", this.deferredPortionOfIncomeTaxes);
 		System.out.println();
 		System.out.format("%32s%10d", "Net Income", this.netIncome);	
+		System.out.println();
 	}
 	
 	

@@ -11,6 +11,12 @@ public class testCompany {
 		
 		IncomeStatement test = new IncomeStatement(1300, 100 ,200);
 		test.printTable();
+		
+		BalanceSheet sheet = new BalanceSheet(500, 400, 100);
+		sheet.printTable();
+		
+		CashFlowStatement state = new CashFlowStatement(100,600);
+		state.printTable();
 	}
 
 }

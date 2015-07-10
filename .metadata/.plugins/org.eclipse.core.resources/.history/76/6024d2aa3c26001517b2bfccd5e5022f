@@ -1,8 +1,0 @@
-
-public class CashFlowStatement {
-	private int netIncome;
-	
-	private int stockBasedCompensation;
-	
-
-}

@@ -408,6 +408,76 @@ public class BalanceSheet {
 	    + this.totalLiabilities + "Shareholder's Equity:" + this.shareholdersEquity + "Balanced: " + this.balanced;
 	}
 	
+	public void printTable(){
+		update();
+		System.out.println("----------------------------------------------------");
+		System.out.format("%32s", "BALANCE SHEET");
+		System.out.println();
+		System.out.format("%32s", "CURRENT ASSETS");
+		System.out.println();
+		System.out.format("%32s%10d", "Cash", this.cash);
+		System.out.println();
+		System.out.format("%32s%10d", "Short Term Investments", this.shortTermInvestments);
+		System.out.println();
+		System.out.format("%32s%10d", "Accounts Receivable", this.accountsReceivable);
+		System.out.println();
+		System.out.format("%32s%10d", "Prepaid Expenses", this.prepaidExpenses);
+		System.out.println();
+		System.out.format("%32s%10d", "Inventory", this.inventory);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Current Assets", this.totalCurrentAssets);
+		System.out.println();
+		System.out.format("%32s", "LONG TERM ASSETS");
+		System.out.println();
+		System.out.format("%32s%10d", "PPE", this.PPE);
+		System.out.println();
+		System.out.format("%32s%10d", "Other Intangible Assets", this.intangibleAssets);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Long-Term Assets", this.totalLongTermAssets);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Assets", this.totalAssets);
+		System.out.println();
+		System.out.format("%32s", "LIABILITIES AND SHAREHOLDER'S EQUITY");
+		System.out.println();
+		System.out.format("%32s", "CURRENT LIABILITIES");
+		System.out.println();
+		System.out.format("%32s%10d", "Revolver", this.revolver);
+		System.out.println();
+		System.out.format("%32s%10d", "Accounts Payable", this.accountsPayable);
+		System.out.println();
+		System.out.format("%32s%10d", "Accrued Expenses", this.accruedExpenses);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Current Liabilities", this.totalCurrentLiabilities);
+		System.out.println();
+		System.out.format("%32s", "LONG TERM LIABILITIES");
+		System.out.println();
+		System.out.format("%32s%10d", "Deferred Revenue", this.deferredRevenue);
+		System.out.println();
+		System.out.format("%32s%10d", "Deferred Tax Liability", this.deferredTaxLiability);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Long-Term Liabilties", this.totalLongTermLiabilities);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Liabilities", this.totalLiabilities);
+		System.out.println();
+		System.out.format("%32s", "SHAREHOLDER'S EQUITY");
+		System.out.println();
+		System.out.format("%32s%10d", "Common Stock", this.commonStock);
+		System.out.println();
+		System.out.format("%32s%10d", "Treasury Stock", this.treasuryStock);
+		System.out.println();
+		System.out.format("%32s%10d", "Retained Earnings", this.retainedEarnings);
+		System.out.println();
+		System.out.format("%32s%10d", "Other Income", this.otherIncome);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Shareholders' Equity", this.shareholdersEquity);
+		System.out.println();
+		System.out.format("%32s%10d", "Total Liabilities and Equity", this.totalLiabilitiesAndEquity);
+		System.out.println();
+		System.out.format("%32s%10b", "Balanced Sheet Balanced", this.balanced);
+		System.out.println();
+		System.out.println("----------------------------------------------------");
+	}
+	
 	
 	
 	

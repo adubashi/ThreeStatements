@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="13" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="644" width="1530" x="65" y="24">
+<window height="1176" width="1535" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -30,23 +30,28 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 <part id="2"/>
+<part id="1"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IncomeStatement.java" partName="IncomeStatement.java" path="/home/adubashi/ThreeStatements/ThreeStatements/src/IncomeStatement.java" title="IncomeStatement.java" tooltip="ThreeStatements/src/IncomeStatement.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ThreeStatements/src/IncomeStatement.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="754" selectionTopPixel="510"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6947" selectionTopPixel="3641"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CashFlowStatement.java" partName="CashFlowStatement.java" path="/home/adubashi/ThreeStatements/ThreeStatements/src/CashFlowStatement.java" title="CashFlowStatement.java" tooltip="ThreeStatements/src/CashFlowStatement.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ThreeStatements/src/CashFlowStatement.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2778" selectionTopPixel="888"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalanceSheet.java" partName="BalanceSheet.java" path="/home/adubashi/ThreeStatements/ThreeStatements/src/BalanceSheet.java" title="BalanceSheet.java" tooltip="ThreeStatements/src/BalanceSheet.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ThreeStatements/src/BalanceSheet.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="32" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1812" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="testCompany.java" partName="testCompany.java" path="/home/adubashi/ThreeStatements/ThreeStatements/src/testCompany.java" title="testCompany.java" tooltip="ThreeStatements/src/testCompany.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ThreeStatements/src/testCompany.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="346" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -54,9 +59,11 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.markerType" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="561" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -65,6 +72,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -93,12 +103,6 @@
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
 </xmlDefinedFilters>
 </customFilters>
-</viewState>
-</view>
-<view id="org.eclipse.ui.internal.introview" partName="Welcome">
-<viewState>
-<presentation currentPage="root" restore="true"/>
-<standbyPart/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
@@ -155,45 +159,31 @@
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.internal.introview"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="topLeft">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@40968282" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
-<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="1">
-<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@40968282" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="1">&#x0A;<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25940594" ratioLeft="262" ratioRight="748" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.6596386" ratioLeft="438" ratioRight="226" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<info folder="true" part="bottomRight" ratio="0.6596386" ratioLeft="438" ratioRight="226" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.TaskList" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.team.ui.GenericHistoryView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="332" ratioRight="332" relationship="4" relative="topLeft">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="bottomLeft" ratio="0.5" ratioLeft="332" ratioRight="332" relationship="4" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -254,6 +244,7 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -279,19 +270,20 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7489301" ratioLeft="525" ratioRight="176" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.88878506" ratioLeft="951" ratioRight="119" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -315,6 +307,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ThreeStatements/src/IncomeStatement.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ThreeStatements/src/CashFlowStatement.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ThreeStatements/src/BalanceSheet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ThreeStatements/src/CashFlowStatement.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ThreeStatements/src/BalanceSheet.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ThreeStatements/src/testCompany.java"/>
 </editors>
 <item historyLabel="IncomeStatement.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -328,8 +323,119 @@
 <item historyLabel="IncomeStatement.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="IncomeStatement.java" index="0">
+<item historyLabel="IncomeStatement.java" index="0">
 <position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BalanceSheet.java" index="4">
+<position info="not_deleted" x="1812" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="BalanceSheet.java" index="4">
+<position info="not_deleted" x="1812" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2893" y="0"/>
+</item>
+<item historyLabel="BalanceSheet.java" index="4">
+<position info="not_deleted" x="1812" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="BalanceSheet.java" index="4">
+<position info="not_deleted" x="1812" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="BalanceSheet.java" index="4">
+<position info="not_deleted" x="1812" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2893" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2889" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2011" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2284" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2530" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2658" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="1298" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="7562" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="1298" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2778" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="7562" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="5654" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="7562" y="0"/>
+</item>
+<item historyLabel="testCompany.java" index="5">
+<position info="not_deleted" x="343" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="7562" y="0"/>
+</item>
+<item historyLabel="testCompany.java" index="5">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2778" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position/>
+</item>
+<item historyLabel="BalanceSheet.java" index="4">
+<position info="not_deleted" x="1812" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2778" y="0"/>
+</item>
+<item historyLabel="testCompany.java" index="5">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="CashFlowStatement.java" index="3">
+<position info="not_deleted" x="2778" y="0"/>
+</item>
+<item historyLabel="testCompany.java" index="5">
+<position info="not_deleted" x="346" y="0"/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position/>
+</item>
+<item historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="5748" y="0"/>
+</item>
+<item active="true" historyLabel="IncomeStatement.java" index="0">
+<position info="not_deleted" x="5666" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -348,6 +454,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="testCompany.java" tooltip="ThreeStatements/src/testCompany.java">
+<persistable path="/ThreeStatements/src/testCompany.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BalanceSheet.java" tooltip="ThreeStatements/src/BalanceSheet.java">
 <persistable path="/ThreeStatements/src/BalanceSheet.java"/>
 </file>
