@@ -8,36 +8,48 @@ public class Company {
 	public BalanceSheet  currentCompanyBS;
 	public BalanceSheet endCompanyBS;
 	
-	public Company(int revenue, int cogs, int operatingExpenses, int cash, int longTermDebt, int commonStock){
-		currentCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
-		endCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
+	public CashFlowStatement currentCompanyCF;
+	public CashFlowStatement endCompanyCF;
+	
+	public Company(int cash, double taxRate){
+		currentCompanyIS = new IncomeStatement(0,0,0);
+		currentCompanyBS = new BalanceSheet(cash,0,0);
+		currentCompanyCF = new CashFlowStatement(cash,0);
+		currentCompanyIS.setTaxRate(taxRate);
 		
-		currentCompanyBS = new BalanceSheet(cash, longTermDebt, commonStock);
-		endCompanyBS = new BalanceSheet(cash, longTermDebt, commonStock);
-		this.update();		
 	}
 	
-	@Override
-	public String toString(){
-		update();	
-		String IncomeState = "Current Company: " + currentCompanyIS.toString() + "End of Period Company: " + 
-				endCompanyIS.toString();
-		String BalanceSheet = "Current Company: " + currentCompanyBS.toString() + "End of Period Company: " + 
-				endCompanyBS.toString();
-		
-		return IncomeState + BalanceSheet;
+	
+	
+
+	
+	public void printTable(){
+		update();
+		currentCompanyIS.printTable();
+		currentCompanyBS.printTable();
+		currentCompanyCF.printTable();
 	}
 	
 	public void update(){
-		currentCompanyIS.update();
-		endCompanyIS.update();
+		 recalculate();		
+		//Update net Income
+		currentCompanyCF.setNetIncome(currentCompanyIS.getNetIncome());
+		recalculate();
+		currentCompanyBS.setCash(currentCompanyCF.getEndCash());
 		
+		
+	}
+	
+	
+	public void recalculate(){
+		currentCompanyIS.update();
 		currentCompanyBS.update();
-		endCompanyBS.update();
+		currentCompanyCF.update();
+		
 	}
 	
 	//Changes in the income statement
-	
+	/*
 	public void changeRevenue(int change){
 		endCompanyIS.setRevenue(endCompanyIS.getRevenue() + change);
 		update();
@@ -97,7 +109,7 @@ public class Company {
 		endCompanyIS.setDeferredPortionOfIncomeTaxes(endCompanyIS.getDeferredPortionOfIncomeTaxes() + change);
 		update();
 	}
-	
+	*/
 	//Changes in the income statement
 	
 	

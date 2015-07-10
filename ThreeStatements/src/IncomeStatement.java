@@ -1,6 +1,6 @@
 
 public class IncomeStatement {
-	public static final double TAXRATE = .4;
+	public  double taxRate = .4;
 	public int revenue;
 	public int cogs;
 	
@@ -190,7 +190,7 @@ public class IncomeStatement {
 	}
 	
 	public void calculateIncomeTaxProvision(){
-		this.IncomeTaxProvision = (int)((double)this.preTaxIncome * TAXRATE);	
+		this.IncomeTaxProvision = (int)((double)this.preTaxIncome * taxRate);	
 	}
 	
 	public void calculateCurrentPortionOfIncomeTaxes(){
@@ -204,6 +204,62 @@ public class IncomeStatement {
 	
 	////Update function///////////
 	
+	public int getGrossProfit() {
+		return grossProfit;
+	}
+
+	public void setGrossProfit(int grossProfit) {
+		this.grossProfit = grossProfit;
+	}
+
+	public int getOperatingIncome() {
+		return operatingIncome;
+	}
+
+	public void setOperatingIncome(int operatingIncome) {
+		this.operatingIncome = operatingIncome;
+	}
+
+	public int getPreTaxIncome() {
+		return preTaxIncome;
+	}
+
+	public void setPreTaxIncome(int preTaxIncome) {
+		this.preTaxIncome = preTaxIncome;
+	}
+
+	public int getIncomeTaxProvision() {
+		return IncomeTaxProvision;
+	}
+
+	public void setIncomeTaxProvision(int incomeTaxProvision) {
+		IncomeTaxProvision = incomeTaxProvision;
+	}
+
+	public int getCurrentPortionOfIncomeTaxes() {
+		return currentPortionOfIncomeTaxes;
+	}
+
+	public void setCurrentPortionOfIncomeTaxes(int currentPortionOfIncomeTaxes) {
+		this.currentPortionOfIncomeTaxes = currentPortionOfIncomeTaxes;
+	}
+
+	public int getNetIncome() {
+		return netIncome;
+	}
+
+	public void setNetIncome(int netIncome) {
+		this.netIncome = netIncome;
+	}
+
+	public double getTaxRate() {
+		return this.taxRate;
+	}
+	
+	public void setTaxRate(double taxRate) {
+		this.taxRate = taxRate;
+	}
+
 	public void update(){
 		calculateGrossProfit();
 		calculateOperatingIncome();
@@ -224,6 +280,7 @@ public class IncomeStatement {
 	
 	public void printTable(){
 		update();
+		System.out.format("%s%.3f ", "Tax Rate: ",taxRate);
 		System.out.format("%32s", "INCOME STATEMENT");
 		System.out.println();
 		System.out.format("%32s%10d", "Revenue", this.revenue);

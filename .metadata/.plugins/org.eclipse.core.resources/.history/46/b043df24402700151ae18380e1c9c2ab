@@ -1,0 +1,10 @@
+
+public class testCompany {
+	
+	public static void main(String Args[]){
+		Company testCompany = new Company(1400);
+		
+		
+	}
+
+}

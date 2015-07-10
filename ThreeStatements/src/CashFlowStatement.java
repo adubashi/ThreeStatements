@@ -171,6 +171,278 @@ public class CashFlowStatement {
 		
 		System.out.println("----------------------------------------------------");
 	}
+
+	public int getNetIncome() {
+		return netIncome;
+	}
+
+	public void setNetIncome(int netIncome) {
+		this.netIncome = netIncome;
+	}
+
+	public int getDepreciation() {
+		return depreciation;
+	}
+
+	public void setDepreciation(int depreciation) {
+		this.depreciation = depreciation;
+	}
+
+	public int getStockBasedCompensation() {
+		return stockBasedCompensation;
+	}
+
+	public void setStockBasedCompensation(int stockBasedCompensation) {
+		this.stockBasedCompensation = stockBasedCompensation;
+	}
+
+	public int getAmortizationOfIntangibles() {
+		return amortizationOfIntangibles;
+	}
+
+	public void setAmortizationOfIntangibles(int amortizationOfIntangibles) {
+		this.amortizationOfIntangibles = amortizationOfIntangibles;
+	}
+
+	public int getDeferredIncomeTaxes() {
+		return deferredIncomeTaxes;
+	}
+
+	public void setDeferredIncomeTaxes(int deferredIncomeTaxes) {
+		this.deferredIncomeTaxes = deferredIncomeTaxes;
+	}
+
+	public int getGainOnSaleOfPPE() {
+		return gainOnSaleOfPPE;
+	}
+
+	public void setGainOnSaleOfPPE(int gainOnSaleOfPPE) {
+		this.gainOnSaleOfPPE = gainOnSaleOfPPE;
+	}
+
+	public int getGainOnSaleOfST() {
+		return gainOnSaleOfST;
+	}
+
+	public void setGainOnSaleOfST(int gainOnSaleOfST) {
+		this.gainOnSaleOfST = gainOnSaleOfST;
+	}
+
+	public int getGoodwillImpairment() {
+		return goodwillImpairment;
+	}
+
+	public void setGoodwillImpairment(int goodwillImpairment) {
+		this.goodwillImpairment = goodwillImpairment;
+	}
+
+	public int getPPEwritedown() {
+		return PPEwritedown;
+	}
+
+	public void setPPEwritedown(int pPEwritedown) {
+		PPEwritedown = pPEwritedown;
+	}
+
+	public int getChangesInaccountsReceivable() {
+		return changesInaccountsReceivable;
+	}
+
+	public void setChangesInaccountsReceivable(int changesInaccountsReceivable) {
+		this.changesInaccountsReceivable = changesInaccountsReceivable;
+	}
+
+	public int getChangesInprepaidExpenses() {
+		return changesInprepaidExpenses;
+	}
+
+	public void setChangesInprepaidExpenses(int changesInprepaidExpenses) {
+		this.changesInprepaidExpenses = changesInprepaidExpenses;
+	}
+
+	public int getChangesIninventory() {
+		return changesIninventory;
+	}
+
+	public void setChangesIninventory(int changesIninventory) {
+		this.changesIninventory = changesIninventory;
+	}
+
+	public int getChangesInaccountsPayable() {
+		return changesInaccountsPayable;
+	}
+
+	public void setChangesInaccountsPayable(int changesInaccountsPayable) {
+		this.changesInaccountsPayable = changesInaccountsPayable;
+	}
+
+	public int getChangesInaccruedExpenses() {
+		return changesInaccruedExpenses;
+	}
+
+	public void setChangesInaccruedExpenses(int changesInaccruedExpenses) {
+		this.changesInaccruedExpenses = changesInaccruedExpenses;
+	}
+
+	public int getChangesIndeferredRevenue() {
+		return changesIndeferredRevenue;
+	}
+
+	public void setChangesIndeferredRevenue(int changesIndeferredRevenue) {
+		this.changesIndeferredRevenue = changesIndeferredRevenue;
+	}
+
+	public int getCFfromOperations() {
+		return CFfromOperations;
+	}
+
+	public void setCFfromOperations(int cFfromOperations) {
+		CFfromOperations = cFfromOperations;
+	}
+
+	public int getPurchaseShortTermInvestments() {
+		return purchaseShortTermInvestments;
+	}
+
+	public void setPurchaseShortTermInvestments(int purchaseShortTermInvestments) {
+		this.purchaseShortTermInvestments = purchaseShortTermInvestments;
+	}
+
+	public int getSellShortTermInvestments() {
+		return sellShortTermInvestments;
+	}
+
+	public void setSellShortTermInvestments(int sellShortTermInvestments) {
+		this.sellShortTermInvestments = sellShortTermInvestments;
+	}
+
+	public int getPurchaseLongTermInvestments() {
+		return purchaseLongTermInvestments;
+	}
+
+	public void setPurchaseLongTermInvestments(int purchaseLongTermInvestments) {
+		this.purchaseLongTermInvestments = purchaseLongTermInvestments;
+	}
+
+	public int getSellLongTermInvestments() {
+		return sellLongTermInvestments;
+	}
+
+	public void setSellLongTermInvestments(int sellLongTermInvestments) {
+		this.sellLongTermInvestments = sellLongTermInvestments;
+	}
+
+	public int getCapitalExpenditures() {
+		return capitalExpenditures;
+	}
+
+	public void setCapitalExpenditures(int capitalExpenditures) {
+		this.capitalExpenditures = capitalExpenditures;
+	}
+
+	public int getPPEsaleProceeds() {
+		return PPEsaleProceeds;
+	}
+
+	public void setPPEsaleProceeds(int pPEsaleProceeds) {
+		PPEsaleProceeds = pPEsaleProceeds;
+	}
+
+	public int getCFfromInvesting() {
+		return CFfromInvesting;
+	}
+
+	public void setCFfromInvesting(int cFfromInvesting) {
+		CFfromInvesting = cFfromInvesting;
+	}
+
+	public int getDividendsIssued() {
+		return dividendsIssued;
+	}
+
+	public void setDividendsIssued(int dividendsIssued) {
+		this.dividendsIssued = dividendsIssued;
+	}
+
+	public int getIssueLongTermDebt() {
+		return issueLongTermDebt;
+	}
+
+	public void setIssueLongTermDebt(int issueLongTermDebt) {
+		this.issueLongTermDebt = issueLongTermDebt;
+	}
+
+	public int getRepayLongTermDebt() {
+		return repayLongTermDebt;
+	}
+
+	public void setRepayLongTermDebt(int repayLongTermDebt) {
+		this.repayLongTermDebt = repayLongTermDebt;
+	}
+
+	public int getIssueShortTermDebt() {
+		return issueShortTermDebt;
+	}
+
+	public void setIssueShortTermDebt(int issueShortTermDebt) {
+		this.issueShortTermDebt = issueShortTermDebt;
+	}
+
+	public int getRepayShortTermDebt() {
+		return repayShortTermDebt;
+	}
+
+	public void setRepayShortTermDebt(int repayShortTermDebt) {
+		this.repayShortTermDebt = repayShortTermDebt;
+	}
+
+	public int getRepurchaseShares() {
+		return repurchaseShares;
+	}
+
+	public void setRepurchaseShares(int repurchaseShares) {
+		this.repurchaseShares = repurchaseShares;
+	}
+
+	public int getIssueNewShares() {
+		return issueNewShares;
+	}
+
+	public void setIssueNewShares(int issueNewShares) {
+		this.issueNewShares = issueNewShares;
+	}
+
+	public int getCFfromFinancing() {
+		return CFfromFinancing;
+	}
+
+	public void setCFfromFinancing(int cFfromFinancing) {
+		CFfromFinancing = cFfromFinancing;
+	}
+
+	public int getBeginningCash() {
+		return beginningCash;
+	}
+
+	public void setBeginningCash(int beginningCash) {
+		this.beginningCash = beginningCash;
+	}
+
+	public int getIncreaseInCash() {
+		return increaseInCash;
+	}
+
+	public void setIncreaseInCash(int increaseInCash) {
+		this.increaseInCash = increaseInCash;
+	}
+
+	public int getEndCash() {
+		return endCash;
+	}
+
+	public void setEndCash(int endCash) {
+		this.endCash = endCash;
+	}
 	
 	
 

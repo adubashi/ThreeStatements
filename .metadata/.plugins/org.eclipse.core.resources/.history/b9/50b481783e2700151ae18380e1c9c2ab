@@ -1,0 +1,129 @@
+
+public class Company {
+	
+	
+	public IncomeStatement currentCompanyIS;
+	public IncomeStatement endCompanyIS;
+	
+	public BalanceSheet  currentCompanyBS;
+	public BalanceSheet endCompanyBS;
+	
+	public CashFlowStatement currentCompanyCF;
+	public CashFlowStatement endCompanyCF;
+	
+	
+	public Company(int revenue, int cogs, int operatingExpenses, int cash, int longTermDebt, int commonStock){
+		currentCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
+		endCompanyIS = new IncomeStatement(revenue, cogs, operatingExpenses);
+		
+		currentCompanyBS = new BalanceSheet(cash, longTermDebt, commonStock);
+		endCompanyBS = new BalanceSheet(cash, longTermDebt, commonStock);
+		
+		currentCompanyCF = new CashFlowStatement(cash,currentCompanyIS.getNetIncome());
+		endCompanyCF = new CashFlowStatement(cash,endCompanyIS.getNetIncome());
+		this.update();		
+	}
+	
+	@Override
+	public String toString(){
+		update();	
+		String IncomeState = "Current Company: " + currentCompanyIS.toString() + "End of Period Company: " + 
+				endCompanyIS.toString();
+		String BalanceSheet = "Current Company: " + currentCompanyBS.toString() + "End of Period Company: " + 
+				endCompanyBS.toString();
+		
+		return IncomeState + BalanceSheet;
+	}
+	
+	public void printTable(){
+		currentCompanyIS.printTable();
+		currentCompanyBS.printTable();
+		currentCompanyCF.printTable();
+	}
+	
+	public void update(){
+		currentCompanyIS.update();
+		endCompanyIS.update();
+		
+		currentCompanyBS.update();
+		endCompanyBS.update();
+		
+		currentCompanyCF.update();
+		endCompanyCF.update();
+		
+		//Update net Income
+		currentCompanyCF.setNetIncome(currentCompanyIS.getNetIncome());
+		endCompanyCF.setNetIncome(endCompanyIS.getNetIncome());
+		System.out.println("Change net Income");
+		
+	}
+	
+	//Changes in the income statement
+	
+	public void changeRevenue(int change){
+		endCompanyIS.setRevenue(endCompanyIS.getRevenue() + change);
+		update();
+	}
+	
+	public void changeOperatingExpenses(int change){
+		endCompanyIS.setOperatingExpenses(endCompanyIS.getOperatingExpenses() + change);
+		update();
+	}
+	
+	public void changeDepreciation(int change){
+		endCompanyIS.setDepreciation(endCompanyIS.getDepreciation() + change);
+		update();
+	}
+	public void changeStockBasedCompensation(int change){
+		endCompanyIS.setStockBasedCompensation(endCompanyIS.getStockBasedCompensation() + change);
+		update();
+	}
+	
+	public void changeAmortizationOfIntangibles(int change){
+		endCompanyIS.setAmortizationOfIntangibles(endCompanyIS.getAmortizationOfIntangibles() + change);
+		update();
+	}
+	
+	public void changeInterestIncome(int change){
+		endCompanyIS.setInterestIncome(endCompanyIS.getInterestIncome() + change);
+		update();
+	}
+	
+	public void changeInterestExpense(int change){
+		endCompanyIS.setInterestExpense(endCompanyIS.getInterestExpense() + change);
+		update();
+	}
+	
+	public void changeSaleOfPPE(int change){
+		endCompanyIS.setSaleOfPPE(endCompanyIS.getSaleOfPPE() + change);
+		update();
+	}
+	
+	public void changeSaleOfST(int change){
+		endCompanyIS.setSaleOfST(endCompanyIS.getSaleOfST() + change);
+		update();
+	}
+	
+	public void changeGoodwillAppairment(int change){
+		endCompanyIS.setGoodwillImpairment(endCompanyIS.getGoodwillImpairment() + change);
+		update();
+		
+	}
+	
+	public void changePPEwritedown(int change){
+		endCompanyIS.setPPEwritedown(endCompanyIS.getPPEwritedown() + change);
+		update();
+	}
+	
+	public void changeDeferredPortionOfIncomeTaxes(int change){
+		endCompanyIS.setDeferredPortionOfIncomeTaxes(endCompanyIS.getDeferredPortionOfIncomeTaxes() + change);
+		update();
+	}
+	
+	//Changes in the income statement
+	
+	
+	
+	
+
+}
