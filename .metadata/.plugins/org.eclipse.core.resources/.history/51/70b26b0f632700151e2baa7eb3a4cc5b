@@ -1,0 +1,29 @@
+
+public class testCompany {
+	
+	public static void main(String Args[]){
+		Company testCompany = new Company(100, .4);
+		testCompany.currentCompanyIS.setRevenue(1300);
+		testCompany.currentCompanyIS.setCogs(100);
+		testCompany.currentCompanyIS.setOperatingExpenses(200);
+		
+		testCompany.currentCompanyBS.setShortTermInvestments(100);
+		testCompany.currentCompanyBS.setAccountsReceivable(100);
+		testCompany.currentCompanyBS.setPrepaidExpenses(100);
+		testCompany.currentCompanyBS.setInventory(100);
+		
+		testCompany.currentCompanyBS.setPPE(1000);
+		testCompany.currentCompanyBS.setIntangibleAssets(200);
+		testCompany.currentCompanyBS.setLongTermInvestments(100);
+		testCompany.currentCompanyBS.setGoodwill(100);
+		
+		testCompany.currentCompanyBS.setRevolver(100);
+		testCompany.currentCompanyBS.setRevolver(revolver);
+		
+		
+		
+		testCompany.printTable();
+		
+	}
+
+}

@@ -433,6 +433,10 @@ public class BalanceSheet {
 		System.out.println();
 		System.out.format("%32s%10d", "Other Intangible Assets", this.intangibleAssets);
 		System.out.println();
+		System.out.format("%32s%10d", "Long term investments", this.longTermInvestments);
+		System.out.println();
+		System.out.format("%32s%10d", "Goodwill", this.goodwill);
+		System.out.println();
 		System.out.format("%32s%10d", "Total Long-Term Assets", this.totalLongTermAssets);
 		System.out.println();
 		System.out.format("%32s%10d", "Total Assets", this.totalAssets);
@@ -454,6 +458,8 @@ public class BalanceSheet {
 		System.out.format("%32s%10d", "Deferred Revenue", this.deferredRevenue);
 		System.out.println();
 		System.out.format("%32s%10d", "Deferred Tax Liability", this.deferredTaxLiability);
+		System.out.println();
+		System.out.format("%32s%10d", "Long Term Debt", this.longTermDebt);
 		System.out.println();
 		System.out.format("%32s%10d", "Total Long-Term Liabilties", this.totalLongTermLiabilities);
 		System.out.println();

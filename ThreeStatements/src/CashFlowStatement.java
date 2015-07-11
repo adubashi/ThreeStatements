@@ -59,7 +59,7 @@ public class CashFlowStatement {
 				                this.deferredIncomeTaxes + this.gainOnSaleOfPPE + this.gainOnSaleOfST +
 				                this.PPEwritedown + this.changesInaccountsReceivable + this.changesInprepaidExpenses 
 				                + this.changesIninventory + this.changesInaccountsPayable + this.changesInaccruedExpenses +
-				                this.changesIndeferredRevenue + this.netIncome;
+				                this.changesIndeferredRevenue + this.netIncome + this.goodwillImpairment;
 	}
 	
 	public void calculateCFfromInvesting(){
@@ -99,13 +99,15 @@ public class CashFlowStatement {
 		System.out.println();
 		System.out.format("%32s%10d", "Depreciation", this.depreciation);
 		System.out.println();
+		System.out.format("%32s%10d", "Stock-Based Compensation", this.stockBasedCompensation);
+		System.out.println();
 		System.out.format("%32s%10d", "Amortization of Intangibles", this.amortizationOfIntangibles);
 		System.out.println();
 		System.out.format("%32s%10d", "Deferred Income Taxes", this.deferredIncomeTaxes);
 		System.out.println();
 		System.out.format("%32s%10d", "Gain On Sale of PPE", this.gainOnSaleOfPPE);
 		System.out.println();
-		System.out.format("%32s%10d", "Gain On Sale of PPE", this.gainOnSaleOfST);
+		System.out.format("%32s%10d", "Gain On Sale of ST", this.gainOnSaleOfST);
 		System.out.println();
 		System.out.format("%32s%10d", "Goodwill Impairment", this.goodwillImpairment);
 		System.out.println();

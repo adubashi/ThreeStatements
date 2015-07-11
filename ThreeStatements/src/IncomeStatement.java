@@ -74,6 +74,7 @@ public class IncomeStatement {
 
 	public void setRevenue(int revenue) {
 		this.revenue = revenue;
+		update();
 	}
 
 	public int getCogs() {
@@ -82,6 +83,7 @@ public class IncomeStatement {
 
 	public void setCogs(int cogs) {
 		this.cogs = cogs;
+		update();
 	}
 
 	public int getOperatingExpenses() {
@@ -90,6 +92,7 @@ public class IncomeStatement {
 
 	public void setOperatingExpenses(int operatingExpenses) {
 		this.operatingExpenses = operatingExpenses;
+		update();
 	}
 
 	public int getDepreciation() {
@@ -185,8 +188,8 @@ public class IncomeStatement {
 	}
 	
 	public void calculatePreTaxIncome(){
-		this.preTaxIncome = this.interestIncome + this.interestExpense + this.saleOfPPE 
-		+ this.saleOfST + this.goodwillImpairment + this.PPEwritedown + this.operatingIncome;
+		this.preTaxIncome =  this.operatingIncome + this.goodwillImpairment + this.PPEwritedown +  this.interestExpense +
+							 + this.saleOfPPE + this.saleOfST + this.interestIncome;
 	}
 	
 	public void calculateIncomeTaxProvision(){
