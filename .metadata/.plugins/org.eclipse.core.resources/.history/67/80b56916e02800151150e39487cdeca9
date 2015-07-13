@@ -1,0 +1,9 @@
+
+public class TwoPeriodCompanyTest {
+
+	public static void main(String[] args) {
+		Company testCompany = new Company(100, .4);
+
+	}
+
+}

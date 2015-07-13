@@ -1,0 +1,13 @@
+
+public class TwoPeriodCompanyTest {
+
+	public static void main(String[] args) {
+		TwoPeriodCompany testCompany = new TwoPeriodCompany(100, .4);
+		testCompany.printTable();
+		
+		//Change Revenue
+		testCompany.changeRevenue(10);
+		testCompany.changeOperatingExpenses(10);
+	}
+
+}

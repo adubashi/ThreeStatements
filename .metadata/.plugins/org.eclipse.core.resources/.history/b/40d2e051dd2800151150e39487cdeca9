@@ -1,0 +1,55 @@
+
+public class TwoPeriodCompany {
+	
+	public Company currentCompany;
+	public Company endCompany;
+	
+	
+	public TwoPeriodCompany(int cash, double taxRate){
+		currentCompany.currentCompanyIS = new IncomeStatement(0,0,0);
+		currentCompany.currentCompanyBS = new BalanceSheet(cash,0,0);
+		currentCompany.currentCompanyCF = new CashFlowStatement(cash,0);
+		currentCompany.currentCompanyIS.setTaxRate(taxRate);
+		
+		
+		endCompany.currentCompanyIS = new IncomeStatement(0,0,0);
+		endCompany.currentCompanyBS = new BalanceSheet(cash,0,0);
+		endCompany.currentCompanyCF = new CashFlowStatement(cash,0);
+		endCompany.currentCompanyIS.setTaxRate(taxRate);
+		
+		//
+		testCompany.currentCompanyIS.setRevenue(1400);
+		testCompany.currentCompanyIS.setCogs(100);
+		testCompany.currentCompanyIS.setOperatingExpenses(200);
+		
+		//Balance Sheet
+		testCompany.currentCompanyBS.setShortTermInvestments(100);
+		testCompany.currentCompanyBS.setAccountsReceivable(100);
+		testCompany.currentCompanyBS.setPrepaidExpenses(100);
+		testCompany.currentCompanyBS.setInventory(100);
+		
+		testCompany.currentCompanyBS.setPPE(1000);
+		testCompany.currentCompanyBS.setIntangibleAssets(200);
+		testCompany.currentCompanyBS.setLongTermInvestments(100);
+		testCompany.currentCompanyBS.setGoodwill(100);
+		
+		testCompany.currentCompanyBS.setRevolver(100);
+		testCompany.currentCompanyBS.setAccountsPayable(200);
+		testCompany.currentCompanyBS.setAccruedExpenses(200);
+		
+		testCompany.currentCompanyBS.setDeferredRevenue(200);
+		testCompany.currentCompanyBS.setDeferredTaxLiability(200);
+		testCompany.currentCompanyBS.setLongTermDebt(100);
+		
+		testCompany.currentCompanyBS.setCommonStock(600);
+		testCompany.currentCompanyBS.setTreasuryStock(-100);
+		testCompany.currentCompanyBS.setRetainedEarnings(300);
+		testCompany.currentCompanyBS.setOtherIncome(100);
+		
+	}
+	
+	public void initialize(){
+		
+	}
+
+}

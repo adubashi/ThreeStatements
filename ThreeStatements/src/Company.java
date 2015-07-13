@@ -81,10 +81,14 @@ public class Company {
 		currentCompanyCF.setAmortizationOfIntangibles(currentCompanyIS.getAmortizationOfIntangibles());
 		currentCompanyCF.setDeferredIncomeTaxes(currentCompanyIS.getDeferredPortionOfIncomeTaxes());
 		currentCompanyCF.setGainOnSaleOfPPE(-currentCompanyIS.getSaleOfPPE());
-		currentCompanyCF.setGainOnSaleOfST(-currentCompanyIS.getSaleOfST());
+		currentCompanyCF.setGainOnSaleOfST(currentCompanyIS.getSaleOfST());
 		currentCompanyCF.setGoodwillImpairment(-currentCompanyIS.getGoodwillImpairment());
 		currentCompanyCF.setGainOnSaleOfST(-currentCompanyIS.getSaleOfST());
 		currentCompanyCF.setPPEwritedown(-currentCompanyIS.getPPEwritedown());
+		
+		
+		currentCompanyCF.setPPEsaleProceeds(currentCompanyIS.getSaleOfPPE());
+		currentCompanyCF.setSellShortTermInvestments(currentCompanyIS.getSaleOfST());
 		recalculate();
 	}
 	
@@ -96,7 +100,7 @@ public class Company {
 			Inventory:
 		 */
 		//Assets 
-		currentCompanyBS.setShortTermInvestments(currentCompanyBS.getShortTermInvestments() - currentCompanyCF.getGainOnSaleOfPPE()+ 
+		currentCompanyBS.setShortTermInvestments(currentCompanyBS.getShortTermInvestments() - currentCompanyCF.getGainOnSaleOfST()+ 
 												 - currentCompanyCF.getSellShortTermInvestments() - currentCompanyCF.getPurchaseShortTermInvestments());
 		currentCompanyBS.setAccountsReceivable(currentCompanyBS.getAccountsReceivable() + currentCompanyCF.getChangesInaccountsReceivable());
 		currentCompanyBS.setPrepaidExpenses(currentCompanyBS.getPrepaidExpenses() - currentCompanyCF.getChangesInprepaidExpenses());

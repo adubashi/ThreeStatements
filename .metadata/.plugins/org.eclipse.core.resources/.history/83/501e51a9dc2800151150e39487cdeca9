@@ -1,0 +1,12 @@
+
+public class TwoPeriodCompany {
+	
+	public Company currentCompany;
+	public Company endCompany;
+	
+	
+	public TwoPeriodCompany(int cash, double taxRate){
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+
+public class TwoPeriodCompany {
+	
+	public Company currentCompany;
+	public Company endCompany;
+
+}

@@ -1,0 +1,48 @@
+
+public class TwoPeriodCompanyTest {
+
+	public static void main(String[] args) {
+		TwoPeriodCompany testCompany = new TwoPeriodCompany(100, .4);
+		//testCompany.printTable();
+		
+		//Change Revenue
+		//testCompany.changeRevenue(10);
+		//testCompany.changeDepreciation(10);
+		//testCompany.changeStockBasedCompensation(10);
+		//testCompany.changeAmortizationOfIntangibles(10);
+		/*
+	public void changeInterestIncome(int increment){
+		endCompany.currentCompanyIS.setInterestIncome(endCompany.currentCompanyIS.getInterestIncome() + increment);
+	}
+	public void changeInterestExpense(int increment){
+		endCompany.currentCompanyIS.setInterestExpense(endCompany.currentCompanyIS.getInterestExpense() + increment);
+	}
+	
+	public void changeSaleOfPPE(int increment){
+		endCompany.currentCompanyIS.setSaleOfPPE(endCompany.currentCompanyIS.getSaleOfPPE() + increment);
+	}
+	public void changeSaleOfST(int increment){
+		endCompany.currentCompanyIS.setSaleOfST(endCompany.currentCompanyIS.getSaleOfST() + increment);
+	}
+	
+	public void changeGoodwillImpairment(int increment){
+		endCompany.currentCompanyIS.setGoodwillImpairment(endCompany.currentCompanyIS.getGoodwillImpairment() + increment);
+	}
+	
+	public void changePPEwritedown(int increment){
+		endCompany.currentCompanyIS.setPPEwritedown(endCompany.currentCompanyIS.getPPEwritedown() + increment);
+	}
+	
+	public void deferredIncomeTaxes(int increment){
+		endCompany.currentCompanyIS.setDeferredPortionOfIncomeTaxes(endCompany.currentCompanyIS.getDeferredPortionOfIncomeTaxes() + increment);
+	}
+	
+		 */
+		testCompany.changeInterestIncome(10);
+		testCompany.changeInterestExpense(10);
+		testCompany.changeSaleOfPPE(10);
+		testCompany.changeSaleOfST(10);
+		testCompany.printTable();
+	}
+
+}

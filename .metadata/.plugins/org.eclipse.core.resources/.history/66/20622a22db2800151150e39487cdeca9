@@ -1,0 +1,8 @@
+
+public class TwoPeriodCompany {
+	
+	public IncomeStatement currentCompanyIS;	
+	public BalanceSheet  currentCompanyBS;
+	public CashFlowStatement currentCompanyCF;
+
+}

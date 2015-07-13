@@ -1,0 +1,22 @@
+
+public class TwoPeriodCompany {
+	
+	public Company currentCompany;
+	public Company endCompany;
+	
+	
+	public TwoPeriodCompany(int cash, double taxRate){
+		currentCompany.currentCompanyIS = new IncomeStatement(0,0,0);
+		currentCompany.currentCompanyBS = new BalanceSheet(cash,0,0);
+		currentCompany.currentCompanyCF = new CashFlowStatement(cash,0);
+		currentCompany.currentCompanyIS.setTaxRate(taxRate);
+		
+		
+		endCompany.currentCompanyIS = new IncomeStatement(0,0,0);
+		endCompany.currentCompanyBS = new BalanceSheet(cash,0,0);
+		currentCompany.currentCompanyCF = new CashFlowStatement(cash,0);
+		currentCompany.currentCompanyIS.setTaxRate(taxRate);
+		
+	}
+
+}
