@@ -21,6 +21,7 @@ public class Company {
 	
 	public void printTable(){
 		update();
+		//System.out.println(currentCompanyCF.getPPEsaleProceeds());
 		currentCompanyIS.printTable();
 		currentCompanyBS.printTable();
 		currentCompanyCF.printTable();
@@ -87,8 +88,8 @@ public class Company {
 		currentCompanyCF.setPPEwritedown(-currentCompanyIS.getPPEwritedown());
 		
 		
-		currentCompanyCF.setPPEsaleProceeds(currentCompanyIS.getSaleOfPPE());
-		currentCompanyCF.setSellShortTermInvestments(currentCompanyIS.getSaleOfST());
+		currentCompanyCF.setPPEsaleProceeds(currentCompanyIS.getSaleOfPPE() + currentCompanyCF.getPPEsaleProceeds());
+		currentCompanyCF.setSellShortTermInvestments(currentCompanyIS.getSaleOfST() + currentCompanyCF.getSellShortTermInvestments());
 		recalculate();
 	}
 	
@@ -129,7 +130,7 @@ public class Company {
 		//Shareholders Equity
 		currentCompanyBS.setCommonStock(currentCompanyBS.getCommonStock() + currentCompanyCF.getIssueNewShares() + currentCompanyCF.getStockBasedCompensation() );
 		currentCompanyBS.setTreasuryStock(currentCompanyBS.getTreasuryStock() + currentCompanyCF.getRepurchaseShares());
-		currentCompanyBS.setRetainedEarnings(currentCompanyBS.getRetainedEarnings() + currentCompanyCF.getNetIncome() + currentCompanyCF.getDividendsIssued() );
+		currentCompanyBS.setRetainedEarnings(currentCompanyBS.getRetainedEarnings() + currentCompanyCF.getNetIncome() - currentCompanyCF.getDividendsIssued() );
 		currentCompanyBS.setOtherIncome(currentCompanyBS.getOtherIncome());
 		
 	}

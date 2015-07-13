@@ -24,6 +24,17 @@ public class TwoPeriodCompanyTest {
 		//testCompany.changePrepaidExpenses(10);
 		//testCompany.changeAccruedExpenses(10);
 		//testCompany.changeDeferredRevenue(10);
+		
+		//Change Cash flow statement
+		//testCompany.changePurchaseShortTermInvestments(10);
+		//testCompany.changeSellShortTermInvestments(10);
+		//testCompany.changePurchaseLongTermInvestments(10);
+		//testCompany.changeSellLongTermInvestments(10);
+		//testCompany.changeCapitalExpenditures(10);
+		//testCompany.changePPEsaleProceeds(10);
+		
+		
+		testCompany.changeIncreaseDividendsIssued(10);
 		testCompany.printTable();
 		
 		

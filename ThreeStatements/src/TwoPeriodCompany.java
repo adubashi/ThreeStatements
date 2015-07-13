@@ -163,6 +163,38 @@ public class TwoPeriodCompany {
 	}
 	
 	
+	///Cash flow statement items
+	
+	public void changePurchaseShortTermInvestments(int increment){
+		endCompany.currentCompanyCF.setPurchaseShortTermInvestments(-increment);
+	}
+	
+	public void changeSellShortTermInvestments(int increment){
+		endCompany.currentCompanyCF.setSellShortTermInvestments(increment);
+		
+	}
+	
+	public void changePurchaseLongTermInvestments(int increment){
+		endCompany.currentCompanyCF.setPurchaseLongTermInvestments(increment);
+	}
+	
+	public void changeSellLongTermInvestments(int increment){
+		endCompany.currentCompanyCF.setSellLongTermInvestments(increment);
+	}
+	
+	public void changeCapitalExpenditures(int increment){
+		endCompany.currentCompanyCF.setCapitalExpenditures(-increment);
+	}
+	
+	public void changePPEsaleProceeds(int increment){
+		endCompany.currentCompanyCF.setPPEsaleProceeds(increment);
+		//System.out.println(endCompany.currentCompanyCF.getPPEsaleProceeds());
+	}
+	
+	public void changeIncreaseDividendsIssued(int increment){
+		endCompany.currentCompanyCF.setDividendsIssued(increment);
+	}
+	
 
 
 

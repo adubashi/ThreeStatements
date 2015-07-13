@@ -1,0 +1,8 @@
+
+public class TestCashFlowStatement {
+	public static void main(String Args[]){
+		CashFlowStatement statement = new CashFlowStatement(100, 600);
+		statement.setSellShortTermInvestments(10);
+		statement.printTable();
+	}
+}

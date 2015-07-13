@@ -1,0 +1,6 @@
+
+public class TestCashFlowStatement {
+	public static void main(String Args[]){
+		CashFlowStatement statement = newCashFlowStatement(100, 600);
+	}
+}

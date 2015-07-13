@@ -137,7 +137,7 @@ public class CashFlowStatement {
 		System.out.println();
 		System.out.format("%32s%10d", "Purchase Long Term Investments", this.purchaseLongTermInvestments);
 		System.out.println();
-		System.out.format("%32s%10d", "Sell Long Term Investments", this.purchaseLongTermInvestments);
+		System.out.format("%32s%10d", "Sell Long Term Investments", this.sellLongTermInvestments);
 		System.out.println();
 		System.out.format("%32s%10d", "Capital Expenditures", this.capitalExpenditures);
 		System.out.println();
@@ -314,8 +314,8 @@ public class CashFlowStatement {
 		return sellShortTermInvestments;
 	}
 
-	public void setSellShortTermInvestments(int sellShortTermInvestments) {
-		this.sellShortTermInvestments = sellShortTermInvestments;
+	public void setSellShortTermInvestments(int sell) {
+		this.sellShortTermInvestments = sell;
 	}
 
 	public int getPurchaseLongTermInvestments() {
@@ -347,7 +347,9 @@ public class CashFlowStatement {
 	}
 
 	public void setPPEsaleProceeds(int pPEsaleProceeds) {
-		PPEsaleProceeds = pPEsaleProceeds;
+		this.PPEsaleProceeds = pPEsaleProceeds;
+		//System.out.println(pPEsaleProceeds);
+		//System.out.println(this.PPEsaleProceeds);
 	}
 
 	public int getCFfromInvesting() {

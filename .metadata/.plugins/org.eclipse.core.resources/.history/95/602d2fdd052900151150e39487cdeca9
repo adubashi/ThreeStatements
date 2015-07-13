@@ -1,0 +1,13 @@
+
+public class TestCashFlowStatement {
+	public static void main(String Args[]){
+		Company statement = new Company(100, .4);
+		statement.currentCompanyCF.setPurchaseLongTermInvestments(10);
+		statement.printTable();
+		
+		
+		Company statement = new Company(100, .4);
+		statement.currentCompanyCF.setPurchaseLongTermInvestments(10);
+		statement.printTable();
+	}
+}
