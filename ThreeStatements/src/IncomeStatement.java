@@ -1,6 +1,6 @@
 
 public class IncomeStatement {
-	public  double taxRate = .4;
+	public  double taxRate;
 	public int revenue;
 	public int cogs;
 	
@@ -36,11 +36,12 @@ public class IncomeStatement {
 	//No input needed
 	public int netIncome;
 	
-	public IncomeStatement(int revenue, int cogs, int operatingExpenses, int depreciation,
+	public IncomeStatement(double taxrate, int revenue, int cogs, int operatingExpenses, int depreciation,
 						   int stockBasedCompensation, int amortizationOfIntangibles, 
 						   int interestIncome, int interestExpense, int saleOfPPE, 
 						   int saleOfST, int goodwillImpairment, int PPEwritedown,
 						   int deferredPortionOfIncomeTaxes){
+		this.taxRate = taxrate;
 		this.revenue = revenue;
 		this.cogs = cogs;
 		this.operatingExpenses = operatingExpenses;
@@ -62,9 +63,9 @@ public class IncomeStatement {
 		calculateNetIncome();
 	}
 	
-	public IncomeStatement(int revenue, int cogs, int operatingExpenses){
+	public IncomeStatement(double taxRate, int revenue, int cogs, int operatingExpenses){
 		
-		this(revenue, cogs, operatingExpenses,0,0,0,0,0,0,0,0,0,0);
+		this(taxRate, revenue, cogs, operatingExpenses,0,0,0,0,0,0,0,0,0,0);
 		
 	}
 	//Setters and Getters////////////////////////////////////////////////

@@ -8,7 +8,7 @@ public class Company {
 
 	
 	public Company(int cash, double taxRate){
-		currentCompanyIS = new IncomeStatement(0,0,0);
+		currentCompanyIS = new IncomeStatement(taxRate,0,0,0);
 		currentCompanyBS = new BalanceSheet(cash,0,0);
 		currentCompanyCF = new CashFlowStatement(cash,0);
 		currentCompanyIS.setTaxRate(taxRate);
@@ -28,8 +28,6 @@ public class Company {
 	}
 	
 	public void update(){
-			
-		
 		 //Update Cash Flow operations
 		 updateCashFlowOperations();
 		 //UpdateCashFlowOperations
@@ -38,10 +36,6 @@ public class Company {
 		 updateBalanceSheet();
 		 
 		 recalculate();
-	
-		
-		
-		
 	}
 	
 	
