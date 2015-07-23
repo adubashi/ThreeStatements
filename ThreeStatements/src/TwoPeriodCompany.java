@@ -3,6 +3,12 @@ public class TwoPeriodCompany {
 	
 	public Company currentCompany;
 	public Company endCompany;
+	public int changeInCash;
+	public int changeInShareholdersEquity;
+	public int changeInNetIncome;
+	public int changeInAssets;
+	public int changeInLiabilitiesSide;
+	public boolean balanced;
 	
 	
 	public TwoPeriodCompany(int cash, double taxRate){
@@ -81,6 +87,40 @@ public class TwoPeriodCompany {
 		currentCompany.printTable();
 		System.out.println("END COMPANY");
 		endCompany.printTable();
+		calculateChanges();
+		printChanges();
+		
+	}
+	
+	public void calculateChanges() {
+		/*
+		public int changeInCash;
+		public int changeInShareholdersEquity;
+		public int changeInNetIncome;
+		public int changeInAssets;
+		public int changeInLiabilitiesSide;
+		public boolean balanced;
+		*/
+		this.changeInCash = endCompany.currentCompanyCF.getEndCash() - currentCompany.currentCompanyCF.getEndCash();
+		this.changeInShareholdersEquity = endCompany.currentCompanyBS.getShareholdersEquity()  - currentCompany.currentCompanyBS.getShareholdersEquity();
+		this.changeInNetIncome = endCompany.currentCompanyIS.getNetIncome() - currentCompany.currentCompanyIS.getNetIncome();
+		this.changeInAssets = endCompany.currentCompanyBS.getTotalAssets() - currentCompany.currentCompanyBS.getTotalAssets();
+		this.changeInLiabilitiesSide = endCompany.currentCompanyBS.getTotalLiabilitiesAndEquity() - currentCompany.currentCompanyBS.getTotalLiabilitiesAndEquity();
+		
+	}
+	
+	public void printChanges(){
+		System.out.println("Changes in Statements: ");
+		System.out.format("%32s%10d", "Change In Cash ", this.changeInCash);
+		System.out.println();
+		System.out.format("%32s%10d", "Change In Shareholder's Equity", this.changeInShareholdersEquity);
+		System.out.println();
+		System.out.format("%32s%10d", "Change In Net Income", this.changeInNetIncome);
+		System.out.println();
+		System.out.format("%32s%10d", "Change In Assets", this.changeInAssets);
+		System.out.println();
+		System.out.format("%32s%10d", "Change In Liabilties", this.changeInLiabilitiesSide);
+		
 	}
 	
 	//////////////////Changes in Income Statement/////////////////////////
@@ -195,7 +235,33 @@ public class TwoPeriodCompany {
 		endCompany.currentCompanyCF.setDividendsIssued(increment);
 	}
 	
-
+	public void changeIssueLongTermDebt(int increment){
+		endCompany.currentCompanyCF.setIssueLongTermDebt(increment);
+	}
+	
+	public void changeRepayLongTermDebt(int increment){
+		endCompany.currentCompanyCF.setRepayLongTermDebt(increment);
+		endCompany.currentCompanyBS.setLongTermDebt(endCompany.currentCompanyBS.getLongTermDebt() - 2 * increment);
+	}
+	
+	public void changeIssueShortTermDebt(int increment){
+		endCompany.currentCompanyCF.setIssueShortTermDebt(increment);
+	}
+	public void changeRepayShortTermDebt(int increment){
+		endCompany.currentCompanyCF.setRepayShortTermDebt(increment);
+		endCompany.currentCompanyBS.setRevolver(endCompany.currentCompanyBS.getRevolver() - 2 * increment);
+	}
+	
+	public void changeRepurchaseShares(int increment){
+		endCompany.currentCompanyCF.setRepurchaseShares(increment);
+		endCompany.currentCompanyBS.setTreasuryStock(endCompany.currentCompanyBS.getTreasuryStock() - 2 * increment);
+	}
+	
+	public void changeIssueNewShares(int increment){
+		endCompany.currentCompanyCF.setIssueNewShares(increment);
+	}
+	////End of changes
+	
 
 
 }

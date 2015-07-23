@@ -32,9 +32,13 @@ public class TwoPeriodCompanyTest {
 		//testCompany.changeSellLongTermInvestments(10);
 		//testCompany.changeCapitalExpenditures(10);
 		//testCompany.changePPEsaleProceeds(10);
+		//testCompany.changeIssueLongTermDebt(10);
+		//testCompany.changeRepayLongTermDebt(7);
+		//testCompany.changeIssueShortTermDebt(10);
+		//testCompany.changeRepayShortTermDebt(10);
+		//testCompany.changeRepurchaseShares(10);
 		
-		
-		testCompany.changeIncreaseDividendsIssued(10);
+		testCompany.changeIssueNewShares(10);
 		testCompany.printTable();
 		
 		
