@@ -232,7 +232,7 @@ public class TwoPeriodCompany {
 	}
 	
 	public void changeIncreaseDividendsIssued(int increment){
-		endCompany.currentCompanyCF.setDividendsIssued(increment);
+		endCompany.currentCompanyCF.setDividendsIssued(-1 * increment);
 	}
 	
 	public void changeIssueLongTermDebt(int increment){
@@ -240,21 +240,21 @@ public class TwoPeriodCompany {
 	}
 	
 	public void changeRepayLongTermDebt(int increment){
-		endCompany.currentCompanyCF.setRepayLongTermDebt(increment);
-		endCompany.currentCompanyBS.setLongTermDebt(endCompany.currentCompanyBS.getLongTermDebt() - 2 * increment);
+		endCompany.currentCompanyCF.setRepayLongTermDebt(-1 * increment);
+		endCompany.currentCompanyBS.setLongTermDebt(endCompany.currentCompanyBS.getLongTermDebt());
 	}
 	
 	public void changeIssueShortTermDebt(int increment){
 		endCompany.currentCompanyCF.setIssueShortTermDebt(increment);
 	}
 	public void changeRepayShortTermDebt(int increment){
-		endCompany.currentCompanyCF.setRepayShortTermDebt(increment);
-		endCompany.currentCompanyBS.setRevolver(endCompany.currentCompanyBS.getRevolver() - 2 * increment);
+		endCompany.currentCompanyCF.setRepayShortTermDebt(-1 * increment);
+		//endCompany.currentCompanyBS.setRevolver(endCompany.currentCompanyBS.getRevolver() + 2 * increment);
 	}
 	
 	public void changeRepurchaseShares(int increment){
-		endCompany.currentCompanyCF.setRepurchaseShares(increment);
-		endCompany.currentCompanyBS.setTreasuryStock(endCompany.currentCompanyBS.getTreasuryStock() - 2 * increment);
+		endCompany.currentCompanyCF.setRepurchaseShares(-1 * increment);
+		//endCompany.currentCompanyBS.setTreasuryStock(endCompany.currentCompanyBS.getTreasuryStock() - 2 * increment);
 	}
 	
 	public void changeIssueNewShares(int increment){

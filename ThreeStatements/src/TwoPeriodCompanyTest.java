@@ -37,8 +37,17 @@ public class TwoPeriodCompanyTest {
 		//testCompany.changeIssueShortTermDebt(10);
 		//testCompany.changeRepayShortTermDebt(10);
 		//testCompany.changeRepurchaseShares(10);
+		//testCompany.changeIssueNewShares(10);
 		
+		//New Tests
+		testCompany.changeIncreaseDividendsIssued(10);
+		testCompany.changeIssueLongTermDebt(10);
+		testCompany.changeRepayLongTermDebt(10);
+		testCompany.changeIssueShortTermDebt(10);
+		testCompany.changeRepayShortTermDebt(10);
+		testCompany.changeRepurchaseShares(10);
 		testCompany.changeIssueNewShares(10);
+		
 		testCompany.printTable();
 		
 		

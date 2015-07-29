@@ -124,7 +124,7 @@ public class Company {
 		//Shareholders Equity
 		currentCompanyBS.setCommonStock(currentCompanyBS.getCommonStock() + currentCompanyCF.getIssueNewShares() + currentCompanyCF.getStockBasedCompensation() );
 		currentCompanyBS.setTreasuryStock(currentCompanyBS.getTreasuryStock() + currentCompanyCF.getRepurchaseShares());
-		currentCompanyBS.setRetainedEarnings(currentCompanyBS.getRetainedEarnings() + currentCompanyCF.getNetIncome() - currentCompanyCF.getDividendsIssued() );
+		currentCompanyBS.setRetainedEarnings(currentCompanyBS.getRetainedEarnings() + currentCompanyCF.getNetIncome() + currentCompanyCF.getDividendsIssued() );
 		currentCompanyBS.setOtherIncome(currentCompanyBS.getOtherIncome());
 		
 	}
